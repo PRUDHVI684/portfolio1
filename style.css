@@ -1,0 +1,186 @@
+/* Base reset and font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a29f9f;
+  color: #333;
+  line-height: 1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #eeeeee;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #0077cc;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Section styling */
+.section {
+  padding: 60px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Home Section */
+#home {
+  background-color: #dbdfe4;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+/* About */
+#about {
+  background-color: #ffffff;
+}
+
+/* Projects */
+#projects {
+  background-color: #f9f9f9;
+}
+
+/* Internships */
+#internships {
+  background-color: #ffffff;
+}
+
+/* Certificates */
+#certificates {
+  background-color: #f9f9f9;
+}
+
+/* Contact */
+#contact {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Card layout (projects, internships, certificates) */
+.project-grid,
+.internship-info,
+.certificate-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card,
+.internship-card,
+.certificate-card {
+  background-color: #fff;
+  border: 1px solid #d19d9a;
+  padding: 20px;
+  width: 250px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s;
+}
+
+.project-card:hover,
+.internship-card:hover,
+.certificate-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Add More button */
+.center-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.center-btn button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.center-btn button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
